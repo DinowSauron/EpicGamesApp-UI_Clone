@@ -1,9 +1,9 @@
-header{
+header.nav{
     position: relative;
     height: 30px;
     background: #131313;
 }
-header .actions{
+header.nav .actions{
     position: absolute;
     display: flex;
     justify-content: center;
