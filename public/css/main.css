@@ -30,6 +30,7 @@ header.logo{
 nav{
     display: flex;
     height: 100%;
+    overflow-x: hidden ;
     overflow-y: scroll;
     background-color: #888;
     padding: 20px
@@ -44,3 +45,4 @@ nav ul a{
     display: flex;
     align-items: center;
 }
+ 
