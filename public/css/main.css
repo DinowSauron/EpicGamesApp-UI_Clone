@@ -1,8 +1,8 @@
 
 aside{
-    position: relative;
-    width: clamp(200px,20vw,400px);
-    height: calc(100% - 145px);
+    position: fixed;
+    width: var(--aside);
+    height: 100%;
     background-color: #131313;
     border-right: 1px solid #333;
 }
@@ -29,10 +29,9 @@ header.logo{
 
 nav{
     display: flex;
-    height: 100%;
+    height: calc(100% - 100px);
     overflow-x: hidden ;
     overflow-y: scroll;
-    background-color: #888;
     padding: 20px
 }
 nav ul{
@@ -40,9 +39,88 @@ nav ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 nav ul a{
     display: flex;
     align-items: center;
+    text-decoration: none;
+    margin: 30px 0;
+    color: #aaa;
 }
- 
+nav ul a:hover{
+    color: #ddd;
+}
+nav ul a.active{
+    color: #fff;
+}
+nav ul img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+nav ul h2{
+    font-size: 12pt;
+}
+
+
+
+main{
+    position: relative;
+    color: #eee;
+    margin-left: var(--aside);
+    overflow-y: scroll;
+    max-height: calc(100% - 30px);
+    width: calc(100% - var(--aside));
+}
+main header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131313;
+    width: calc(100% - var(--aside) - 18px);
+    height: 7vw;
+    padding: 30px;
+}
+main header ul{
+    display: flex;
+    list-style-type: none;
+}
+main header ul a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: clamp(5pt, 1.4vw 12pt);
+
+}
+main header ul a.active,
+main header ul a:hover{
+    color: #eee;
+}
+
+
+
+.search-input{
+    display: flex;
+    align-items: center;
+    background: #222222;
+    border-radius: 5px;
+    height: 40px;
+
+}
+.search-input img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.search-input input{
+    width: 12vw;
+    background: transparent;
+    border: none;
+}
+
+main .container{
+    padding: 30px;
+    padding-top: 5vw;
+}
