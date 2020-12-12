@@ -32,7 +32,7 @@ nav{
     height: calc(100% - 100px);
     overflow-x: hidden ;
     overflow-y: scroll;
-    padding: 20px
+    padding: 40px
 }
 nav ul{
     display: flex;
@@ -122,5 +122,5 @@ main header ul a:hover{
 
 main .container{
     padding: 30px;
-    padding-top: 5vw;
+    padding-top: 7vw;
 }
